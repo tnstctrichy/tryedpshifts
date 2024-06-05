@@ -261,7 +261,7 @@ else:
                 new_staff_name = st.text_input('Staff Name')
                 new_staff_number = st.text_input('Staff Number')
                 new_mobile_phone = st.text_input('Mobile Phone')
-                new_shift_timing = st.selectbox('Shift Timing', ['6-2', '8-5', '10-6', '2-10', '5-1', '5-9(DAY/NIGHT)', '10-6(NIGHT)'])
+                new_shift_timing = st.selectbox('Shift Timing', ['6-2(DAY)', '8-5(DAY)', '10-6(DAY)', '2-10(DAY)','5-1(DAY/NIGHT)', '5-9(DAY/NIGHT)', '1-9(NIGHT)','10-6(NIGHT)'])
                 submitted = st.form_submit_button('Update Shift')
                 if submitted:
                     update_shift(shift_id, new_date, new_branch, new_staff_name, new_staff_number, new_mobile_phone, new_shift_timing)
